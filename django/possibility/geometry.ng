@@ -1,0 +1,18 @@
+element geometry {
+    (element point {
+        attribute x {text}
+        attribute y {text}
+    }
+    | element line {
+        element point {
+            attribute x { xsd:integer }
+            attribute y { xsd:integer }
+        }+
+    }
+    | element polygon {
+        element point {
+            attribute x { xsd:integer }
+            attribute y { xsd:integer }
+        }+
+    })
+}

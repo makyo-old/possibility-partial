@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<!--
+@author Matthew Scott
+@version $Id: hibernate.cfg.xml 8 2010-04-02 07:22:24Z matthew.joseph.scott $
+-->
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://arrakis.drab-makyo.com:5432/possibilitytest</property>
+    <property name="hibernate.connection.username">makyo</property>
+    <property name="hibernate.connection.pool_size">1</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.connection.password">makyo</property>
+    <mapping resource="hibernate.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
